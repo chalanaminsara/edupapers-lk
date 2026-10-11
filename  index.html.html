@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071a35">
+<title>EduPapers LK | O/L Past Papers</title>
+<style>
+:root{--bg:#071426;--panel:#102442;--panel2:#132d50;--blue:#49b8ff;--text:#f3f8ff;--muted:#b6c8df;--line:#284566;--yellow:#ffd84d}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0%,#153b66 0,transparent 32%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+.wrap{max-width:1050px;margin:auto;padding:20px}.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0 24px}.brand{font-weight:900;font-size:21px;letter-spacing:.2px}.brand span{color:var(--blue)}.pill{border:1px solid #37638d;color:#d9edff;border-radius:999px;padding:7px 12px;font-size:12px}
+.hero{padding:28px 0 25px}.eyebrow{color:var(--yellow);font-weight:800;font-size:13px;letter-spacing:1px}.hero h1{font-size:clamp(32px,6vw,55px);line-height:1.08;margin:12px 0}.hero h1 span{color:var(--blue)}.hero p{color:var(--muted);max-width:620px;margin:14px 0 22px}.searchbox{display:flex;gap:9px;max-width:660px}.searchbox input,.searchbox select{min-width:0;background:#f4f8ff;color:#14243a;border:0;border-radius:12px;padding:14px;font-size:15px;outline:2px solid transparent}.searchbox input{flex:1}.searchbox select{width:130px}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:28px 0 14px}.sectionhead h2{margin:0;font-size:23px}.sectionhead p{margin:0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:17px;padding:17px;display:flex;flex-direction:column;min-height:190px}.icon{width:43px;height:43px;border-radius:13px;background:#1e4971;display:grid;place-items:center;font-size:23px;margin-bottom:13px}.card h3{margin:0 0 4px;font-size:17px}.card p{margin:0 0 15px;color:var(--muted);font-size:13px;flex:1}.btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;border-radius:10px;background:var(--blue);color:#06162a;font-weight:800;padding:10px 12px;font-size:13px}.btn:hover{filter:brightness(1.08)}.btn.secondary{background:transparent;color:#d7edff;border:1px solid #49749c}.notice{margin:23px 0;background:#10233c;border:1px solid #284566;border-radius:15px;padding:16px;color:var(--muted);font-size:13px}.notice strong{color:#fff}.footer{border-top:1px solid var(--line);margin-top:30px;padding:22px 0 10px;color:var(--muted);font-size:12px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}.footer a{color:#8dd2ff}.empty{display:none;color:var(--muted);padding:18px 0}
+@media(max-width:700px){.wrap{padding:16px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{padding:13px;min-height:205px}.searchbox{flex-wrap:wrap}.searchbox input{flex-basis:100%}.searchbox select{flex:1;width:auto}.sectionhead{align-items:start;flex-direction:column}.hero{padding-top:15px}}
+@media(max-width:420px){.grid{grid-template-columns:1fr}.card{min-height:0}.nav{align-items:start}.pill{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <div class="brand">📘 Edu<span>Papers</span> LK</div>
+    <div class="pill">O/L • Past Papers • PDF</div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">STUDY SMART • PRACTISE MORE</div>
+      <h1>ඔයාගේ O/L සූදානම<br><span>අදම පටන් ගන්න.</span></h1>
+      <p>විෂයය තෝරලා පසුගිය ප්‍රශ්න පත්‍ර සහ පිළිතුරු සොයාගන්න. නිල අධ්‍යාපන මූලාශ්‍ර වෙත ගිහින් PDF බලන්න හෝ download කරගන්න.</p>
+      <div class="searchbox">
+        <input id="search" type="search" placeholder="විෂයයක් සොයන්න... (උදා: Science)" aria-label="Search subjects">
+        <select id="year" aria-label="Choose year">
+          <option value="all">සියලු වර්ෂ</option>
+          <option value="2024">2024 (2025)</option>
+          <option value="2023">2023 (2024)</option>
+          <option value="2022">2022 (2023)</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <div class="sectionhead"><h2>📚 O/L විෂයයන්</h2><p id="count">විෂයයන් 8ක්</p></div>
+      <div class="grid" id="cards">
+        <article class="card" data-name="mathematics ගණිතය maths"><div class="icon">➗</div><h3>Mathematics / ගණිතය</h3><p>Past papers සහ marking schemes සොයන්න.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14674" target="_blank" rel="noopener">Papers බලන්න ↗</a></article>
+        <article class="card" data-name="science විද්‍යාව"><div class="icon">🧪</div><h3>Science / විද්‍යාව</h3><p>විද්‍යාව සඳහා පසුගිය ප්‍රශ්න පත්‍ර.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14672" target="_blank" rel="noopener">Papers බලන්න ↗</a></article>
+        <article class="card" data-name="english ඉංග්‍රීසි language"><div class="icon">🔤</div><h3>English / ඉංග්‍රීසි</h3><p>English Language papers සහ පිළිතුරු.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14671&lang=en" target="_blank" rel="noopener">Papers බලන්න ↗</a></article>
+        <article class="card" data-name="history ඉතිහාසය"><div class="icon">🏛️</div><h3>History / ඉතිහාසය</h3><p>ඉතිහාසය විෂයට අදාළ පත්‍ර සොයන්න.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14661&lang=ta_lk" target="_blank" rel="noopener">Papers බලන්න ↗</a></article>
+        <article class="card" data-name="ict information communication technology තොරතුරු සන්නිවේදන තාක්ෂණය"><div class="icon">💻</div><h3>ICT / තොරතුරු තාක්ෂණය</h3><p>ICT ප්‍රශ්න පත්‍ර සහ පුහුණු සම්පත්.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14661&lang=ta_lk" target="_blank" rel="noopener">Papers බලන්න ↗</a></article>
+        <article class="card" data-name="business accounting ව්‍යාපාර හා ගිණුම්කරණය"><div class="icon">📊</div><h3>Business & Accounting</h3><p>ව්‍යාපාර හා ගිණුම්කරණ ප්‍රශ්න පත්‍ර.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14661&lang=ta_lk" target="_blank" rel="noopener">Papers බලන්න ↗</a></article>
+        <article class="card" data-name="civic education පුරවැසි අධ්‍යාපනය"><div class="icon">⚖️</div><h3>Civic Education</h3><p>පුරවැසි අධ්‍යාපනයේ පසුගිය පත්‍ර.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14661&lang=ta_lk" target="_blank" rel="noopener">Papers බලන්න ↗</a></article>
+        <article class="card" data-name="all subjects සියලු විෂයයන් sinhala geography"><div class="icon">📖</div><h3>සියලුම විෂයයන්</h3><p>e‑Thaksalawa හි O/L papers ලැයිස්තුව බලන්න.</p><a class="btn" href="https://e-thaksalawa.moe.gov.lk/lcms/course/section.php?id=14661&lang=ta_lk" target="_blank" rel="noopener">සියලු Papers ↗</a></article>
+      </div>
+      <div class="empty" id="empty">මේ නමට ගැළපෙන විෂයයක් හමු වුණේ නැහැ. වෙනත් වචනයක් යොදා බලන්න.</div>
+    </section>
+
+    <div class="notice"><strong>ℹ️ Download කරන විදිහ:</strong> “Papers බලන්න” ඔබන්න → අවශ්‍ය වර්ෂය/ප්‍රශ්න පත්‍රය තෝරන්න → PDF ගොනුව විවෘත කර Download හෝ Share භාවිත කරන්න. මෙම වෙබ් අඩවිය නිල ප්‍රශ්න පත්‍ර ගොනු තමන්ගේ server එකේ තබා නොගෙන, නිල e‑Thaksalawa පිටු වෙත යොමු කරයි.</div>
+  </main>
+  <footer class="footer"><span>© 2026 EduPapers LK • Student project</span><span>Official source: <a href="https://e-thaksalawa.moe.gov.lk/" target="_blank" rel="noopener">e‑Thaksalawa</a></span></footer>
+</div>
+<script>
+const search=document.getElementById('search'), year=document.getElementById('year');
+const cards=[...document.querySelectorAll('.card')], count=document.getElementById('count'), empty=document.getElementById('empty');
+function filterCards(){const q=search.value.trim().toLowerCase();let n=0;cards.forEach(card=>{const ok=card.dataset.name.toLowerCase().includes(q);card.style.display=ok?'flex':'none';if(ok)n++});count.textContent=`විෂයයන් ${n}ක්`;empty.style.display=n?'none':'block';}
+search.addEventListener('input',filterCards);
+year.addEventListener('change',()=>{if(year.value!=='all'){document.querySelector('.notice').innerHTML='<strong>📌 වර්ෂය තෝරාගෙන ඇත:</strong> '+year.options[year.selectedIndex].text+' — අදාළ විෂයයේ නිල පිටුව විවෘත කර එම වර්ෂයේ පත්‍රය තෝරන්න.';}else{document.querySelector('.notice').innerHTML='<strong>ℹ️ Download කරන විදිහ:</strong> “Papers බලන්න” ඔබන්න → අවශ්‍ය වර්ෂය/ප්‍රශ්න පත්‍රය තෝරන්න → PDF ගොනුව විවෘත කර Download හෝ Share භාවිත කරන්න. මෙම වෙබ් අඩවිය නිල ප්‍රශ්න පත්‍ර ගොනු තමන්ගේ server එකේ තබා නොගෙන, නිල e‑Thaksalawa පිටු වෙත යොමු කරයි.';}});
+</script>
+</body>
+</html>
